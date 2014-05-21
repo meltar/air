@@ -11,6 +11,8 @@ gem 'jquery-rails'
 gem 'slim-rails'
 
 gem 'devise'
+gem 'sidekiq'
+gem 'sinatra'
 
 gem 'httparty'
 gem 'nokogiri'
