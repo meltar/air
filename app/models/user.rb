@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
 
   def cat_me!
     req = cat_requests.create!
-    req.fulfill
+		CatRequestWorker.perform_sync req.id
+    #req.fulfill
   end
 end
